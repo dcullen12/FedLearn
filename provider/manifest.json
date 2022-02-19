@@ -1,0 +1,21 @@
+{
+    "background": {
+       "service_worker": "./dist/provider.js"
+    },
+    "description": "Federated Learning without peeking into user data",
+    "key": "<Extension Key>",
+    "manifest_version": 3,
+    "name": "Federated Learning Project",
+    "permissions": [ "storage", "history", "identity", "identity.email", "downloads", "tabs" ],
+    "host_permissions": [ "*://*/*" ],
+    "version": "1.0",
+    "oauth2": {
+      "client_id": "<Client ID>",
+      "scopes": [
+          "profile email",
+          "https://www.googleapis.com/auth/photoslibrary.readonly",
+          "https://www.googleapis.com/auth/drive"
+      ]
+  }
+ }
+ 
